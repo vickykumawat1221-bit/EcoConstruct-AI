@@ -1,0 +1,13 @@
+# EcoConstruct AI - Member 3
+
+# Secrets: never commit the local .env (it holds GEMINI_API_KEY)
+.env
+
+# Local virtual environment
+venv/
+
+# Python bytecode cache
+__pycache__/
+
+# pytest cache
+.pytest_cache/
