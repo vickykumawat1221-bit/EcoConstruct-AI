@@ -1,16 +1,39 @@
-# React + Vite
+# EcoConstruct AI — frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+React + Vite single-page app. It is a view over the FastAPI backend and holds
+no emission factor, cost or carbon arithmetic of its own.
 
-Currently, two official plugins are available:
+## Run
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+From the project root, `./start.sh` starts both halves. To run this half alone:
 
-## React Compiler
+```bash
+npm install
+npm run dev        # http://localhost:5180
+```
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+`vite.config.js` proxies `/api`, `/health`, `/docs` and `/openapi.json` to the
+backend at `http://localhost:8000`, so the browser stays on one origin. Point
+at a different backend with `VITE_BACKEND_URL`, or set `VITE_API_BASE` to talk
+to a deployed API without the proxy.
 
-## Expanding the Oxlint configuration
+## What it calls
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+| Feature | Endpoint |
+| --- | --- |
+| Material picker + factors + costs | `GET /api/materials` |
+| Register emissions | `POST /api/calculate` |
+| Green Material Intelligence | `POST /api/compare-materials` |
+| Overview, charts, score, hotspots, opportunities | `POST /api/dashboard` |
+| AI Advisor report | `POST /api/recommendations` |
+| Load-demo button | `GET /api/scenarios/default` |
+| Connection status | `GET /health` |
+
+All requests live in `src/api.js`. `src/App.jsx` renders the responses.
+
+## Build
+
+```bash
+npm run build      # -> dist/
+npm run preview    # serves the build on :4174
+```

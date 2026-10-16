@@ -1,0 +1,16 @@
+material_id,unit,unit_cost,currency,cost_basis,source_name,source_note,verification_status
+MAT001,kg,7.50,INR,"Delivered cement price per kg",BUSINESS_PLACEHOLDER,"Illustrative placeholder for a hackathon prototype. Not a quoted price and not a market survey. Replace with current supplier quotations before any real decision.",unverified
+MAT002,m3,5500.00,INR,"Ready-mixed concrete C30-37 supplied and placed",BUSINESS_PLACEHOLDER,"Illustrative placeholder for a hackathon prototype. Excludes formwork and reinforcement. Replace with current supplier quotations.",unverified
+MAT003,m3,5300.00,INR,"Ready-mixed concrete with fly ash",BUSINESS_PLACEHOLDER,"Illustrative placeholder for a hackathon prototype. Adjust for local fly ash availability and mix approval.",unverified
+MAT004,m3,5900.00,INR,"Ready-mixed concrete with GGBS",BUSINESS_PLACEHOLDER,"Illustrative placeholder for a hackathon prototype. GGBS is often priced above standard mix and below OPC blends.",unverified
+MAT005,kg,65.00,INR,"Reinforcing steel delivered to site",BUSINESS_PLACEHOLDER,"Illustrative placeholder for a hackathon prototype. Rebar price moves daily with scrap and mill output.",unverified
+MAT006,unit,7.00,INR,"Per clay brick including delivery",BUSINESS_PLACEHOLDER,"Illustrative placeholder for a hackathon prototype. Brick unit dimensions are undefined in the factor dataset.",unverified
+MAT007,tonne,1800.00,INR,"Construction sand",BUSINESS_PLACEHOLDER,"Illustrative placeholder for a hackathon prototype. Price varies sharply between river sand and manufactured sand.",unverified
+MAT008,tonne,1500.00,INR,"Crushed stone aggregate",BUSINESS_PLACEHOLDER,"Illustrative placeholder for a hackathon prototype. Transport distance is the main variable cost.",unverified
+MAT009,liter,95.00,INR,"Construction diesel at pump",BUSINESS_PLACEHOLDER,"Illustrative placeholder for a hackathon prototype. Excludes GST and varies by state in India.",unverified
+MAT010,kg,72.00,INR,"Structural steel sections",BUSINESS_PLACEHOLDER,"Illustrative placeholder for a hackathon prototype. Fabrication and erection are not included.",unverified
+MAT011,m3,45000.00,INR,"Structural softwood timber",BUSINESS_PLACEHOLDER,"Illustrative placeholder for a hackathon prototype. Species, grading and treatment are not specified.",unverified
+MAT012,m2,850.00,INR,"Float glass supplied and installed",BUSINESS_PLACEHOLDER,"Illustrative placeholder for a hackathon prototype. Thickness is not specified in the factor dataset.",unverified
+MAT013,m2,220.00,INR,"Mineral wool insulation",BUSINESS_PLACEHOLDER,"Illustrative placeholder for a hackathon prototype. Thickness is not specified in the factor dataset.",unverified
+MAT014,kg,22.00,INR,"Gypsum plaster",BUSINESS_PLACEHOLDER,"Illustrative placeholder for a hackathon prototype. Bagged plaster price only.",unverified
+MAT015,kg,210.00,INR,"Aluminium extrusions",BUSINESS_PLACEHOLDER,"Illustrative placeholder for a hackathon prototype. Primary metal price dominates and is volatile.",unverified
